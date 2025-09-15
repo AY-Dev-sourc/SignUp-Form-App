@@ -1,0 +1,24 @@
+:root{
+    /* Colors */
+    --Red: hsl(4, 100%, 67%);
+    /*****/
+    --Blue800: hsl(234, 29%, 20%);
+    --Blue700: hsl(235, 18%, 26%);
+    --Grey: hsl(0, 0%,58%);
+    --White: hsl(0, 0%, 100%);
+}
+/* Card Active state */
+.form input:focus{
+    border-color: var(--Blue800);
+}
+.form button:active,.success button:active{
+    background-color: var(--Red);
+    box-shadow: 5px 5px 12px var(--Red);
+}
+/* Card Validation state */
+
+.input.error {
+    border-color: var(--Red);
+    color: var(--Red);
+    background-color: hsl(4, 50%, 90%);
+}

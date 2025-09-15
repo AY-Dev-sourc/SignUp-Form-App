@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+#root{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Card-Container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template: auto 1fr / 1fr;
+}
+.image{
+    width: 100%;
+}
+.image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.form-container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+.List{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.6em 0;
+}
+.form input, .form button{
+    width: 100%;
+    height: 4em;
+    margin: 0.2em 0;
+    padding: 0.6em;
+}
+/* Success layout */
+.success{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10em 1em 2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.success-title{
+    margin: 0.5em 0;
+}
+.success-paragraph{
+    margin: 0.5em 0;
+}
+.success button{
+    width: 100%;
+    padding: 1em;
+    justify-self: flex-end;
+}
+
+
+/* tablet screen */
+@media screen and (min-width:50em) {
+    .Card-Container{
+        width: 90%;
+        min-height: 90vh;
+        padding: 1em;
+        border-radius: 1em;
+    }
+    /* Success layout */
+    .success{
+        width: 50%;
+        min-height: 30vh;
+        padding: 1em;
+        justify-content: center;
+        border-radius: 1em;
+    }
+}
+
+/* laptop screen */
+@media screen and (min-width:60em) {
+    .Card-Container{
+        width: 60%;
+        height: 40vh;
+        grid-template: 100% / 60% 40%;
+    }
+    .image{
+        grid-area: 1/2/span 1/span 1;
+        width: 100%;
+        height: auto;
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .form-container{
+        grid-area: 1/1/2/2;
+        padding: 1em;
+    }
+    .form-title{
+        margin: 0;
+    }
+    .List{
+        margin: 0.5em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1em;
+    }
+    .form{
+        margin: 0.4em 0;
+    }
+    .labels{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+    .form input, .form button{
+        width: 100%;
+        height: 4em;
+        margin: 0.4em 0;
+    }
+    /* Success layout */
+    .success{
+        width: 30%;
+        min-height: 40vh;
+        padding: 1em;
+        justify-content: center;
+        border-radius: 1em;
+    }
+}

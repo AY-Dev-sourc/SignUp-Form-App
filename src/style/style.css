@@ -1,0 +1,79 @@
+:root{
+    /* Colors */
+    --Red: hsl(4, 100%, 67%);
+    /*****/
+    --Blue800: hsl(234, 29%, 20%);
+    --Blue700: hsl(235, 18%, 26%);
+    --Grey: hsl(0, 0%,58%);
+    --White: hsl(0, 0%, 100%);
+    /* Weights */
+    --Weight400: 400;
+    --Weight700: 700;
+}
+body{
+    background-color: var(--Blue800);
+}
+.Card-Container{
+    background-color: var(--White);
+}
+.form-title{
+    font-weight: var(--Weight700);
+    font-size: 2.4rem;
+}
+.description{
+    font-weight: var(--Weight400);
+}
+.List{
+    list-style-image: url('../assets/images/icon-list.svg');
+    list-style-position: inside;
+}
+.labels label:nth-child(1) {
+    font-weight: var(--Weight700);
+    font-size: 0.8rem;
+}
+.labels label:nth-child(2) {
+    font-weight: var(--Weight700);
+    color: var(--Red);
+    font-size: 0.8rem;
+}
+.form input{
+    outline: none;
+    border: 1px solid var(--Grey);
+    border-radius: 6px;
+    color: var(--Blue800);
+    transition: border-color 0.4s ease;
+}
+.form button,.success button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: var(--Weight700);
+    color: var(--White);
+    background-color: var(--Blue800);
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+/* Success layout */
+.success{
+    background-color: var(--White);
+}
+.icon{
+    width: 4em;
+    height: 4em;
+}
+.icon img{
+    width: inherit;
+    height: inherit;
+    display: block;
+}
+.success-title{
+    font-weight: var(--Weight700);
+    font-size: 2.4rem;
+}
+.success-paragraph{
+    font-weight: var(--Weight400);
+}
+.success-paragraph span{
+    font-weight: var(--Weight700);
+}
